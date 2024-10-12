@@ -63,6 +63,68 @@
 // }
 
 // export default Menu;
+// // {/* copy this */}
+
+
+
+
+
+// "use client";
+
+// import { useState } from "react";
+// import Link from "next/link";
+// import { FiAlignJustify } from "react-icons/fi";
+
+// const Menu = () => {
+//   const [open, setOpen] = useState(false);
+
+//   const navs = [
+//     {
+//       title: "Home",
+//       link: "/",
+//     },
+//     {
+//       title: "Shop",
+//       link: "/shop",
+//     },
+//     {
+//       title: "About",
+//       link: "/about",
+//     },
+//     {
+//       title: "Contact",
+//       link: "/contact",
+//     },
+//   ];
+
+//   return (
+//     <div>
+//       {/* Icon to toggle the menu */}
+//       <FiAlignJustify
+//         size={28}
+//         className="cursor-pointer"
+//         onClick={() => setOpen((prev) => !prev)}
+//       />
+
+//       {/* Conditional rendering for the menu */}
+//       {open && (
+//         <div className="absolute bg-white left-0 top-12 p-4 space-y-2 w-64">
+//           <ul className="space-y-2">
+//             {navs.map((item, index) => (
+//               <li key={index}>
+//                 <Link href={item.link}>
+//                   <a className="text-gray-800 hover:text-blue-600">{item.title}</a>
+//                 </Link>
+//               </li>
+//             ))}
+//           </ul>
+//         </div>
+//       )}
+//     </div>
+//   );
+// };
+
+// export default Menu;
 
 "use client";
 
@@ -138,3 +200,9 @@ const Menu: React.FC<MenuProps> = ({ navs}) => {
 };
 
 export default Menu;
+
+
+
+
+
+
