@@ -216,11 +216,12 @@ const Navbaricones = dynamic(() => import("./navbaricones"), { ssr: false });
 const Navbar = () => {
   // Navigation links
   const navs = [
-    { title: "Logout", link: "/logout" },
-    { title: "HomePage", link: "/" },
-    { title: "Shop", link: "/shop" },
-    { title: "About", link: "/about" },
-    { title: "Contact", link: "/contact" },
+   
+    { title: "خروج", link: "/logout" },
+    { title: "صفحه اصلی", link: "/" },
+    { title: "فروشگاه", link: "/shop" },
+    { title: "درباره ما", link: "/about" },
+    { title: "تماس با ما", link: "/contact" }
   ];
 
   return (
